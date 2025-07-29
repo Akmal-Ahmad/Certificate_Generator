@@ -166,7 +166,6 @@
       const formData = new FormData(form);
       const submitButton = form.querySelector('button[type="submit"]');
       submitButton.disabled = true;
-      submitButton.textContent = "Generating...";
       actionButtons.style.display = 'none';
 
       form.appendChild(loadingMessage);
@@ -189,7 +188,6 @@
         alert("Error generating certificate: " + err.message);
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = "Generate Certificate";
         form.removeChild(loadingMessage);
       }
     });
