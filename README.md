@@ -6,7 +6,6 @@ If the app doesn't load instantly please wait for render to deploy it and you'll
 <br/>
 <br/>
 <br/>
-<br/>
 This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.
 
 
