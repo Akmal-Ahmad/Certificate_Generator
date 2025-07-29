@@ -1,5 +1,6 @@
-This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.
+This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.<br/>
 Project Deployed on Render :- https://certificate-generator-locq.onrender.com
+<br/>
 <br/>
 If the app doesn't load instantly please wait for render to deploy it and you'll be redirected to the app. <br/>
 <br/>
