@@ -1,38 +1,37 @@
+This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.
 Project Deployed on Render :- https://certificate-generator-locq.onrender.com
-<br/>
-<br/>
 <br/>
 If the app doesn't load instantly please wait for render to deploy it and you'll be redirected to the app. <br/>
 <br/>
 <br/>
-This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.
-
-Local Setup Guide<br/>
-Follow the steps below to run this project on your local machine.
-
-Prerequisites<br/>
+<br/>
+<br/>
+Local Setup Guide :-<br/>
+Prerequisites :-<br/>
 Before you begin, make sure you have the following installed:
 <br/>
-Node.js (v14 or higher recommended)
-<br/>
-Git
-<br/>
-<br/>
-<br/>
-<br/>
-Steps to Setup Locally
-<br/>
 <br/>
 
-1. Clone the Repository
+1. Node.js (v14 or higher recommended)
+   <br/>
+2. Git
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   Steps to Setup Locally
+   <br/>
+   <br/>
+
+3. Clone the Repository
    Open a terminal and run: git clone https://github.com/Akmal-Ahmad/Certificate_Generator
    <br/>
    <br/>
-2. Install Dependencies
+4. Install Dependencies
    Run: npm install (This will install required packages like express, pdf-lib, fontkit, and others.)
    <br/>
    <br/>
-3. Start the Server
+5. Start the Server
    Run: node server.js (By default, the server will start on http://localhost:3000)
    <br/>
    <br/>
