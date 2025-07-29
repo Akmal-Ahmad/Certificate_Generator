@@ -5,8 +5,6 @@ Project Deployed on Render :- https://certificate-generator-locq.onrender.com
 If the app doesn't load instantly please wait for render to deploy it and you'll be redirected to the app. <br/>
 <br/>
 <br/>
-<br/>
-<br/>
 Local Setup Guide :-<br/>
 Prerequisites :-<br/>
 Before you begin, make sure you have the following installed:
