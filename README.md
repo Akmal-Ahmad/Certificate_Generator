@@ -15,33 +15,29 @@ Before you begin, make sure you have the following installed:
 
 1. Node.js (v14 or higher recommended)
    <br/>
+   <br/>
 2. Git
    <br/>
    <br/>
-   <br/>
-   <br/>
-   Steps to Setup Locally
-   <br/>
-   <br/>
-
-3. Clone the Repository
+3. Clone the Repository<br/>
    Open a terminal and run: git clone https://github.com/Akmal-Ahmad/Certificate_Generator
    <br/>
    <br/>
-4. Install Dependencies
+4. Install Dependencies<br/>
    Run: npm install (This will install required packages like express, pdf-lib, fontkit, and others.)
    <br/>
    <br/>
-5. Start the Server
+5. Start the Server<br/>
    Run: node server.js (By default, the server will start on http://localhost:3000)
    <br/>
    <br/>
    <br/>
    <br/>
-   Step-by-Step Flow<br/>
-   1> User fills the form:
-   The form asks for the student’s name, course name, and date.
-   When the user clicks "Generate Certificate", the data is sent to the server.
+
+Step-by-Step Flow :-<br/>
+1> User fills the form:
+The form asks for the student’s name, course name, and date.
+When the user clicks "Generate Certificate", the data is sent to the server.
 
 2> Server receives the request:
 The Express backend handles a POST request to /generate.
