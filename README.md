@@ -8,7 +8,7 @@ If the app doesn't load instantly please wait for render to deploy it and you'll
 This certificate generator is a web-based tool that allows users to generate personalized student certificates by filling out a simple form.
 
 
-Step-by-Step Flow
+Step-by-Step Flow<br/>
 1> User fills the form:
     The form asks for the student’s name, course name, and date.
     When the user clicks "Generate Certificate", the data is sent to the server.
