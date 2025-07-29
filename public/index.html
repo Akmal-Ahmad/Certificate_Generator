@@ -153,22 +153,44 @@
 
     let pdfBlobUrl = null;
 
+    const loadingMessage = document.createElement('p');
+    loadingMessage.textContent = "Generating certificate...";
+    loadingMessage.style.marginTop = "16px";
+    loadingMessage.style.fontStyle = "italic";
+    loadingMessage.style.color = "#7e57c2";
+    loadingMessage.style.textAlign = "center";
+
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
+
       const formData = new FormData(form);
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.textContent = "Generating...";
+      actionButtons.style.display = 'none';
+
+      form.appendChild(loadingMessage);
+
       try {
         const response = await fetch('/generate', {
           method: 'POST',
           body: new URLSearchParams(formData),
         });
+
         if (!response.ok) {
           throw new Error("PDF generation failed");
         }
+
         const blob = await response.blob();
         pdfBlobUrl = URL.createObjectURL(blob);
+
         actionButtons.style.display = 'flex';
       } catch (err) {
         alert("Error generating certificate: " + err.message);
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Generate Certificate";
+        form.removeChild(loadingMessage);
       }
     });
 
