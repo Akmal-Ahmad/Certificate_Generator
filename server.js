@@ -64,6 +64,10 @@ app.post('/generate', async (req, res) => {
   }
 });
 
+app.get('/ping', (req, res) => {
+    res.status(200).send('Server is active!');
+});
+
 app.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
 });
